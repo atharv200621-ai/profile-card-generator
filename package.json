@@ -1,0 +1,13 @@
+{
+  "name": "profile-card-generator",
+  "version": "1.0.0",
+  "description": "Form-based app that renders dynamic profile cards from server-processed input",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "express": "^4.19.2"
+  }
+}

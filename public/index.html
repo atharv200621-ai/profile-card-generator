@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Generator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav><a href="/">+ Create Profile</a><a href="/profiles">All Profiles</a></nav>
+  <main>
+    <h1>Profile Card Generator</h1>
+    <form action="/create" method="POST" class="form">
+      <label>Name *
+        <input type="text" name="name" placeholder="e.g. aisha khan" required maxlength="60">
+      </label>
+
+      <label>Bio
+        <textarea name="bio" rows="3" maxlength="300" placeholder="Tell us about yourself"></textarea>
+      </label>
+
+      <label>Skills (comma separated)
+        <input type="text" name="skills" placeholder="JavaScript, Node.js, React">
+      </label>
+
+      <label>GitHub (username or URL)
+        <input type="text" name="github" placeholder="octocat">
+      </label>
+
+      <label>LinkedIn (username or URL)
+        <input type="text" name="linkedin" placeholder="your-name">
+      </label>
+
+      <label>Twitter (username or URL)
+        <input type="text" name="twitter" placeholder="yourhandle">
+      </label>
+
+      <button type="submit">Generate Card</button>
+    </form>
+  </main>
+</body>
+</html>

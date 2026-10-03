@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f1f3f9;
+  color: #222;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 16px 24px;
+  background: #3b3f8f;
+}
+nav a { color: #fff; text-decoration: none; font-weight: 600; }
+
+main { max-width: 900px; margin: 30px auto; padding: 0 16px; }
+h1 { text-align: center; }
+
+.form {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.form label { display: block; margin-bottom: 14px; font-weight: 600; font-size: 14px; }
+.form input, .form textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccd;
+  border-radius: 8px;
+  font: inherit;
+}
+.form button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #3b3f8f;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form button:hover { background: #2d3070; }
+
+.card {
+  max-width: 340px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.avatar {
+  width: 96px; height: 96px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 34px; font-weight: 700;
+}
+.card h2 { margin: 0 0 8px; }
+.bio { color: #555; font-size: 14px; line-height: 1.5; }
+.skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 14px 0; }
+.chip { background: #e6e8ff; color: #3b3f8f; padding: 4px 10px; border-radius: 999px; font-size: 12px; }
+.links { display: flex; justify-content: center; gap: 14px; }
+.links a { color: #3b3f8f; font-weight: 600; text-decoration: none; font-size: 14px; }
+.links a:hover { text-decoration: underline; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 20px; }
+.error { text-align: center; color: #b00020; }
